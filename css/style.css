@@ -483,7 +483,7 @@ template {
 
 @media (max-width: 1200px) {
   .container {
-    max-width: 960px;
+    max-width: 860px;
   }
 }
 
@@ -549,6 +549,6 @@ template {
 
 @media (max-width: 576px) {
   .container {
-    width: 99px;
+    width: 300px;
   }
 }
