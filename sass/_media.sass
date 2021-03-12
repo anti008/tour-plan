@@ -30,10 +30,11 @@
     &__input
       width: 340px
   .hotel
+    padding-top: 10px
     &-grid
       flex-direction: column
-    &__slider
-      margin-bottom: 30px
+      &__slider
+        margin-bottom: 30px
     &-right
       display: flex
       flex-direction: row
@@ -94,15 +95,23 @@
     width: 100%
   .map
     width: 100%
+    &__width
+      width: 100%
 @media ( max-width: 576px  )
   .container
     max-width: 430px
     width: 88%
 @media ( max-width: 480px  )
+  .navbar-top
+    padding-top: 25px
+    padding-bottom: 25px
+  .logo
+    max-width: 100px
   .hotel
-    padding-top: 8px
+    padding-top: 0
+    padding-bottom: 20px
   .slider
-    height: 250px
+    height: 180px
   .hotel
     &__slider
       margin-bottom: 20px
