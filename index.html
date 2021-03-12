@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Best Tour Plan - Hotel Booking</title>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -110,7 +111,7 @@
                 <img src="img/star.svg" alt="" class="star" />
                 <img src="img/star.svg" alt="" class="star" />
               </div>
-              <h1 class="hotel-name hotel-info__name">Grand Hilton Hotel</h1>
+              <h1 class="hotel-name hotel-info__name">grand hilton hotel</h1>
               <span class="offer hotel-info__offer">Flash Offer</span>
             </div>
             <p class="hotel-description hotel-info__description">
@@ -121,7 +122,9 @@
           <!-- hotel-info__text -->
           <div class="rating hotel-info__rating">
             <span class="rating__text">User Ratings</span>
-            <span class="rating__counter">4.5/5</span>
+            <span class="rating__counter"
+              >4.5/<span class="rating__max">5</span></span
+            >
           </div>
           <!-- hotel-info__rating -->
         </div>
@@ -129,5 +132,30 @@
       <!-- /.container -->
     </section>
     <!-- /.hotel -->
+    <div class="hotel-grid">
+      <div class="container">
+        <div class="slider">
+          <!-- Slider main container -->
+          <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide"><img src="img/slide.jpg" alt="" /></div>
+              <div class="swiper-slide"><img src="img/slide.jpg" alt="" /></div>
+              <div class="swiper-slide"><img src="img/slide.jpg" alt="" /></div>
+              ...
+            </div>
+            <!-- If we need navigation buttons -->
+            <button class="slider-button slider-button--prev"></button>
+            <button class="slider-button slider-button--next"></button>
+          </div>
+          <!-- /.swiper-container -->
+        </div>
+        <!-- /.slider -->
+      </div>
+    </div>
+    <!-- /.hotel-grid -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
