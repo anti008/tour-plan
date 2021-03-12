@@ -135,15 +135,21 @@
 
     <div class="container">
       <div class="hotel-grid">
-        <div class="slider">
+        <div class="slider hotel__slider">
           <!-- Slider main container -->
           <div class="swiper-container">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
               <!-- Slides -->
-              <div class="swiper-slide"><img src="img/slide.jpg" alt="" /></div>
-              <div class="swiper-slide"><img src="img/slide.jpg" alt="" /></div>
-              <div class="swiper-slide"><img src="img/slide.jpg" alt="" /></div>
+              <div class="swiper-slide">
+                <img class="swiper-slide__img" src="img/slide.jpg" alt="" />
+              </div>
+              <div class="swiper-slide swiper-slide__img">
+                <img class="swiper-slide__img" src="img/slide.jpg" alt="" />
+              </div>
+              <div class="swiper-slide swiper-slide__img">
+                <img class="swiper-slide__img" src="img/slide.jpg" alt="" />
+              </div>
               ...
             </div>
             <!-- If we need navigation buttons -->
@@ -187,8 +193,9 @@
           </div>
           <div class="map">
             <iframe
+              class="map__width"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6674.461278385859!2d24.951125479248486!3d60.175283000191875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46920bd38d526101%3A0xdc580a1332dcfe2f!2sHilton%20Helsinki%20Strand!5e0!3m2!1sru!2sru!4v1615558403832!5m2!1sru!2sru"
-              width="347"
+              width="100%"
               height="213"
               style="border: 0"
               allowfullscreen=""
