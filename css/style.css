@@ -527,7 +527,7 @@ img {
 }
 
 .hotel {
-  padding-top: 23px;
+  padding-top: 15px;
   padding-bottom: 0;
 }
 
@@ -1010,6 +1010,10 @@ img {
   .hotel {
     padding-top: 0;
     padding-bottom: 20px;
+  }
+  .hotel-right {
+    min-height: 442px;
+    margin-top: -10px;
   }
   .slider {
     height: 180px;
