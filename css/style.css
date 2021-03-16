@@ -606,6 +606,8 @@ img {
 .hotel-slider {
   width: 728px;
   height: 450px;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .hotel-slider:after {
@@ -882,6 +884,7 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin: 0;
   color: #ffffff;
   font-style: normal;
   font-weight: 300;
@@ -925,6 +928,10 @@ img {
   border: none;
   background-color: #EC1F46;
   color: #ffffff;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
 }
 
 .reviews {
@@ -939,6 +946,7 @@ img {
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 70px;
+  margin-top: 0;
 }
 
 .reviews-slider__item {
@@ -984,7 +992,7 @@ img {
 
 .reviews-slider__button {
   position: absolute;
-  top: 50%;
+  top: 45%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   width: 30px;
@@ -1001,11 +1009,13 @@ img {
 .reviews-slider__button--pref {
   background-image: url(../img/arrow-pref-secondary.svg);
   left: 0;
+  margin-left: 20px;
 }
 
 .reviews-slider__button--next {
   background-image: url(../img/arrow-next-secondary.svg);
   right: 0;
+  margin-right: 20px;
 }
 
 .reviews-slider__profile {
@@ -1039,6 +1049,7 @@ img {
   line-height: 15px;
   color: #EC1F46;
   margin-bottom: 10px;
+  margin-top: 0;
 }
 
 .reviews-slider__date {
@@ -1141,6 +1152,15 @@ img {
   }
   .map {
     width: 340px;
+  }
+  .newsletter {
+    padding-top: 80px;
+  }
+  .reviews__title {
+    margin-top: 10px;
+    margin-bottom: 50px;
+    font-size: 30px;
+    line-height: 38px;
   }
   .reviews-slider__item {
     max-width: 580px;
@@ -1268,8 +1288,18 @@ img {
     max-width: 430px;
     width: 88%;
   }
+  .hotel-slider {
+    height: 180px;
+  }
   .hotel-grid {
     padding-bottom: 40px;
+  }
+  .hotel-right {
+    height: 450px;
+  }
+  .map {
+    margin-bottom: 40px;
+    height: 173px;
   }
   .newsletter {
     padding-top: 76px;
@@ -1320,5 +1350,13 @@ img {
   }
   .newsletter-title__strong {
     font-size: 30px;
+  }
+  .reviews__title {
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 40px;
+  }
+  .reviews-slider__button {
+    top: 6%;
   }
 }
