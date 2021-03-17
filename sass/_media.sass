@@ -14,6 +14,9 @@
   .card
     width: 200px
     height: 200px
+  .footer
+    &__input
+      flex-basis: 100%
 @media ( max-width:992px )
   .container, .newsletter-wraper
     max-width: 700px
@@ -84,7 +87,36 @@
     height: 255px
     &__title
       max-width: 200px
-    &__image
+  .footer
+    &-wrapper
+      grid-template-columns: repeat(6, 1fr)
+      grid-row-gap: 40px
+    &__input
+      flex-basis: 49%
+    &__logo
+      grid-row: 1 / 2
+      grid-column: span 2
+    &__social
+      &-network
+        grid-row: 1 / 2
+        grid-column: span 4
+        align-self: center
+    &__categories
+      grid-row: 2 / 3
+      grid-column: span 2
+    &__legal
+      grid-column: span 2
+    &__additional
+      grid-column: span 2
+    &__contact
+      &-details
+        grid-column: span 5
+        grid-row: 3
+      &-form
+        grid-column: span 5
+        grid-row: 4
+    &-bottom
+      grid-column: 1 / 7
 @media ( max-width: 767px )
   .container
     max-width: 576px
@@ -169,6 +201,9 @@
     height: 255px
     &__title
       max-width: 150px
+  .footer
+    &__input
+      flex-basis: 100%
 @media ( max-width: 576px  )
   .container
     max-width: 430px
@@ -193,6 +228,45 @@
       margin-bottom: 37px
   .subscribe
     width: 100%
+  .activities
+    padding-bottom: 40px
+  .footer
+    &__form
+      margin-bottom: 20px
+    &-wrapoer
+      grid-template: 1fr
+    &__logo
+      grid-row: 1
+      grid-column: 1
+    &__social
+      &-network
+        grid-row: 2
+        grid-column: 1
+    &__additional
+      grid-row: 3
+      grid-column: 1
+    &__categories
+      grid-row: 4
+      grid-column: 1
+    &__legal
+      grid-row: 5
+      grid-column: 1
+    &__contact
+      &-details
+        grid-row: 6
+        grid-column: 1
+      &-form
+        grid-row: 7
+        grid-column: 1
+    &-bottom
+      grid-column: 1 
+      display: flex
+      flex-wrap: wrap
+      &__text
+        margin-bottom: 10px
+        flex-basis: 100%
+        font-size: 12px
+        line-height: 15px
 @media ( max-width: 480px  )
   .navbar-top
     padding-top: 25px
