@@ -1075,7 +1075,7 @@ img {
 }
 
 .reviews-slider__text {
-  max-width: 537px;
+  width: 537px;
   max-height: 120px;
   font-style: normal;
   font-weight: normal;
@@ -1338,34 +1338,18 @@ img {
 
 .footer__input::-webkit-input-placeholder {
   color: #BDBDBD;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 15px;
 }
 
 .footer__input:-ms-input-placeholder {
   color: #BDBDBD;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 15px;
 }
 
 .footer__input::-ms-input-placeholder {
   color: #BDBDBD;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 15px;
 }
 
 .footer__input::placeholder {
   color: #BDBDBD;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 15px;
 }
 
 .footer__message {
@@ -2025,6 +2009,9 @@ img {
     padding-top: 25px;
     padding-bottom: 25px;
   }
+  .navbar-bottom {
+    top: 68px;
+  }
   .logo {
     max-width: 100px;
   }
@@ -2053,6 +2040,9 @@ img {
   }
   .newsletter-title__strong {
     font-size: 30px;
+  }
+  .reviews {
+    padding-top: 28px;
   }
   .reviews__title {
     font-size: 18px;
