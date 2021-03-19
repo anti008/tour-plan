@@ -145,8 +145,8 @@
   body
     padding-top: 78px
   .navbar
-    &__mobile
-      &_fixed
+    &-mobile
+      &-fixed
         position: fixed
         left: 0
         top: 0
@@ -171,6 +171,7 @@
       padding-top: 30px
       &__visible
         display: block
+        overflow-x: scroll
     &-menu
       flex-direction: column
       &__item
@@ -237,7 +238,7 @@
       width: 92%
       align-items: flex-start
   .reviews
-    padding-bottom: 20px
+    padding-bottom: 30px
     &-slider
       &__item
         padding: 0 30px 30px
@@ -291,7 +292,7 @@
   .activities
     padding-bottom: 40px
   .footer
-    padding-top: 60px
+    padding-top: 70px
     &__title
       &--inline
         margin-left: 0
@@ -427,3 +428,11 @@
       &__wrapper
         &-link
           margin-bottom: 7px
+  .navbar
+    &-bottom
+      &__visible
+        overflow-x: scroll
+  .search
+    &__input
+      width: 90%
+      max-width: 340px
