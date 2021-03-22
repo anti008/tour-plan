@@ -57,6 +57,7 @@
   .newsletter
     padding-top: 80px
   .reviews
+    padding-top: 30px
     &__title
       margin-top: 10px
       margin-bottom: 50px
@@ -78,7 +79,7 @@
     padding-bottom: 50px
     padding-top: 30px
     &__title
-      margin-top: 22px
+      margin-top: 38px
     &-wrapper
       flex-wrap: wrap
     &__card
@@ -138,6 +139,12 @@
         &-link
           margin-left: 0
       grid-column: 1 / 7
+  .modal
+    &__wrapper
+      flex-wrap: wrap
+    &__button
+      flex-basis: 100%
+      margin-bottom: 20px
 @media ( max-width: 767px )
   .container
     max-width: 576px
@@ -265,6 +272,10 @@
   .footer
     &__input
       flex-basis: 100%
+  .modal
+    &__dialog
+      max-width: none
+      width: 450px
 @media ( max-width: 576px  )
   .container
     max-width: 430px
@@ -291,6 +302,8 @@
     width: 100%
   .activities
     padding-bottom: 40px
+    &__title
+      margin-top: 13px
   .footer
     padding-top: 70px
     &__title
@@ -354,9 +367,9 @@
       &--dn
         display: block
     &__input
-      flex-basis: 85%
+      flex-basis: 100%
     &__message
-      flex-basis: 85%
+      flex-basis: 100%
     &-bottom
       grid-column: 1 
       display: flex
@@ -366,6 +379,16 @@
         flex-basis: 100%
         font-size: 12px
         line-height: 15px
+  .modal
+    &__dialog
+      max-width: none
+      width: 100%
+      height: 100%
+    &__info
+      visibility: hidden
+      &--hiden
+        visibility: visible
+        margin-bottom: 20px
 @media ( max-width: 480px  )
   .navbar
     &-top
@@ -440,3 +463,7 @@
     &__input
       width: 90%
       max-width: 340px
+  .modal
+    &__dialog
+      max-width: none
+      padding: 33px 50px

@@ -39,17 +39,31 @@
   &__input
     width: 100%
     margin-bottom: 15px
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 15px
+    &::placeholder
+      color: #BDBDBD
   &__message
     width: 100%
     min-height: 123px
     margin-bottom: 15px
     resize: none
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 15px
+    &::placeholder
+      color: #BDBDBD
   &__info
     font-style: normal
     font-weight: bold
     font-size: 12px
     line-height: 15px
     color: $footer-text-color
+    &--hiden
+      visibility: hidden
   &__title
     font-style: normal
     font-weight: bold
@@ -58,3 +72,7 @@
     margin-bottom: 15px
     text-transform: uppercase
     text-align: center
+  &__wrapper
+    display: flex
+    justify-content: space-between
+    align-items: center

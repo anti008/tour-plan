@@ -417,7 +417,7 @@
               class="card__image"
             />
             <h3 class="card__title">The curious corner of&nbsp;chamarel</h3>
-            <button class="card__button">Book Now</button>
+            <button class="card__button" data-toggle="modal">Book Now</button>
           </div>
           <!-- /.card -->
           <div class="card activities__card">
@@ -428,7 +428,7 @@
               class="card__image"
             />
             <h3 class="card__title">Gymkhana club golf course</h3>
-            <button class="card__button">Book Now</button>
+            <button class="card__button" data-toggle="modal">Book Now</button>
           </div>
           <!-- /.card -->
           <div class="card activities__card">
@@ -441,7 +441,7 @@
             <h3 class="card__title">
               Tamarind falls hiking trip&nbsp;- full day
             </h3>
-            <button class="card__button">Book Now</button>
+            <button class="card__button" data-toggle="modal">Book Now</button>
           </div>
           <!-- /.card -->
           <div class="card activities__card">
@@ -452,7 +452,7 @@
               class="card__image"
             />
             <h3 class="card__title">The blue marine discovery quest</h3>
-            <button class="card__button">Book Now</button>
+            <button class="card__button" data-toggle="modal">Book Now</button>
           </div>
           <!-- /.card -->
         </div>
@@ -584,8 +584,8 @@
                     alt="icon: phone numbers"
                   />
                 </div>
-                Tel (business hours) : 269 1500 Tel <br />(hotline) Monday -
-                Saturday: 52-56-61-38 (08:00 am – 20:00 pm) Tel <br />(hotline)
+                Tel (business hours) : 269 1500 <br />Tel (hotline) Monday -
+                Saturday: 52-56-61-38 (08:00 am – 20:00 pm) <br />Tel (hotline)
                 Sunday: 52-56-61-38 (08:00 am – 14:00 pm)
               </li>
               <li class="footer__item footer__item--mb-2">
@@ -596,7 +596,9 @@
                     alt="icon: e-mail"
                   />
                 </div>
-                cherly.lawson@example.com
+                <a class="footer__link" href="mailto:cherly.lawson@example.com"
+                  >cherly.lawson@example.com</a
+                >
               </li>
             </ul>
           </div>
@@ -671,6 +673,12 @@
             placeholder="Phone Number*"
             name="phone"
           />
+          <input
+            type="text"
+            class="input modal__input"
+            placeholder="Email*"
+            name="email"
+          />
           <textarea
             class="message modal__message"
             cols="30"
@@ -678,8 +686,14 @@
             placeholder="Message"
             name="message"
           ></textarea>
-          <button class="button modal__button" type="submit">Send</button>
-          <span class="modal__info">* Required Fields</span>
+          <div class="modal__wrapper">
+            <span class="modal__info modal__info--hiden"
+              >* Required Fields</span
+            >
+            <button class="button modal__button" type="submit">Send</button>
+            <span class="modal__info">* Required Fields</span>
+          </div>
+          <!-- /.modal__wrapper -->
         </form>
       </div>
       <!-- /.modal__dialog -->
