@@ -1373,19 +1373,19 @@ img {
   line-height: 15px;
 }
 
-.footer__input-group::-webkit-input-placeholder {
+.footer__input::-webkit-input-placeholder {
   color: #BDBDBD;
 }
 
-.footer__input-group:-ms-input-placeholder {
+.footer__input:-ms-input-placeholder {
   color: #BDBDBD;
 }
 
-.footer__input-group::-ms-input-placeholder {
+.footer__input::-ms-input-placeholder {
   color: #BDBDBD;
 }
 
-.footer__input-group::placeholder {
+.footer__input::placeholder {
   color: #BDBDBD;
 }
 
