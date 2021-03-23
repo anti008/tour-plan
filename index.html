@@ -273,14 +273,20 @@
           subscribe to our
           <span class="newsletter-title__strong">Newsletter</span>
         </h2>
-        <form action="#" class="subscribe newsletter__subscribe form__validate">
+        <form
+          action="#"
+          class="subscribe newsletter__subscribe form__validate"
+          action="send.php"
+          method="POST"
+        >
           <input
             type="email"
             class="subscribe__input"
             placeholder="Your email adress"
+            name="email"
             required
           />
-          <button class="subscribe__button">Send</button>
+          <button class="subscribe__button button" type="submit">Send</button>
         </form>
       </div>
     </section>
@@ -649,11 +655,12 @@
                 />
               </div>
               <textarea
+                type="message"
                 class="message footer__message"
                 cols="30"
                 rows="10"
                 placeholder="Message"
-                name="text"
+                name="message"
               ></textarea>
               <span class="footer__info footer__info--dn"
                 >* Required Fields</span
@@ -718,6 +725,7 @@
             required
           />
           <textarea
+            type="message"
             class="message modal__message"
             cols="30"
             rows="10"
