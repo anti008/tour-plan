@@ -391,6 +391,10 @@ img {
   border: none;
 }
 
+.invalid {
+  color: #EC1F46;
+}
+
 .navbar {
   background-color: #ffffff;
 }
@@ -1320,7 +1324,7 @@ img {
 }
 
 .footer__title--mb-3 {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 
 .footer__item {
@@ -1356,7 +1360,11 @@ img {
 }
 
 .footer__input {
-  margin-bottom: 15px;
+  width: 100%;
+}
+
+.footer__input-group {
+  margin-top: 15px;
   -ms-flex-preferred-size: 48%;
       flex-basis: 48%;
   font-style: normal;
@@ -1365,19 +1373,19 @@ img {
   line-height: 15px;
 }
 
-.footer__input::-webkit-input-placeholder {
+.footer__input-group::-webkit-input-placeholder {
   color: #BDBDBD;
 }
 
-.footer__input:-ms-input-placeholder {
+.footer__input-group:-ms-input-placeholder {
   color: #BDBDBD;
 }
 
-.footer__input::-ms-input-placeholder {
+.footer__input-group::-ms-input-placeholder {
   color: #BDBDBD;
 }
 
-.footer__input::placeholder {
+.footer__input-group::placeholder {
   color: #BDBDBD;
 }
 
@@ -1386,6 +1394,7 @@ img {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   margin-bottom: 23px;
+  margin-top: 15px;
   resize: none;
   font-style: normal;
   font-weight: normal;
@@ -1491,11 +1500,13 @@ img {
   opacity: 0;
   -webkit-transition: opacity 0.2s;
   transition: opacity 0.2s;
+  overflow: auto;
 }
 
 .modal__dialog--visible {
   visibility: visible;
   opacity: 1;
+  overflow: auto;
 }
 
 .modal__close {
@@ -1508,7 +1519,7 @@ img {
 
 .modal__input {
   width: 100%;
-  margin-bottom: 15px;
+  margin-top: 15px;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -1534,7 +1545,7 @@ img {
 .modal__message {
   width: 100%;
   min-height: 123px;
-  margin-bottom: 15px;
+  margin-top: 15px;
   resize: none;
   font-style: normal;
   font-weight: normal;
@@ -1556,6 +1567,10 @@ img {
 
 .modal__message::placeholder {
   color: #BDBDBD;
+}
+
+.modal__button {
+  margin-left: -140px;
 }
 
 .modal__info {
@@ -1590,6 +1605,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 15px;
 }
 
 .thankyou__button {
@@ -1615,7 +1631,7 @@ img {
     width: 200px;
     height: 200px;
   }
-  .footer__input {
+  .footer__input-group {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
@@ -1737,7 +1753,7 @@ img {
   .footer__title--inline {
     margin-left: -50px;
   }
-  .footer__input {
+  .footer__input-group {
     -ms-flex-preferred-size: 49%;
         flex-basis: 49%;
   }
@@ -1783,7 +1799,7 @@ img {
     -ms-grid-row: 4;
     grid-row: 4;
   }
-  .footer__input {
+  .footer__input-group {
     -ms-flex-preferred-size: 46%;
         flex-basis: 46%;
   }
@@ -1995,7 +2011,7 @@ img {
   .card__title {
     max-width: 150px;
   }
-  .footer__input {
+  .footer__input-group {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
@@ -2136,7 +2152,7 @@ img {
   .footer__info--dn {
     display: block;
   }
-  .footer__input {
+  .footer__input-group {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
@@ -2170,7 +2186,7 @@ img {
   }
   .modal__info--hiden {
     visibility: visible;
-    margin-bottom: 20px;
+    margin-top: 80px;
   }
 }
 
@@ -2236,7 +2252,7 @@ img {
   .footer__contact-details {
     margin-bottom: 26px;
   }
-  .footer__input {
+  .footer__input-group {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }

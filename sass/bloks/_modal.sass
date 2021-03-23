@@ -27,9 +27,11 @@
     visibility: hidden
     opacity: 0
     transition: opacity 0.2s
+    overflow: auto
     &--visible
       visibility: visible
       opacity: 1
+      overflow: auto
   &__close
     position: absolute
     right: 18px
@@ -38,7 +40,7 @@
     cursor: pointer
   &__input
     width: 100%
-    margin-bottom: 15px
+    margin-top: 15px
     font-style: normal
     font-weight: normal
     font-size: 12px
@@ -48,7 +50,7 @@
   &__message
     width: 100%
     min-height: 123px
-    margin-bottom: 15px
+    margin-top: 15px
     resize: none
     font-style: normal
     font-weight: normal
@@ -56,6 +58,8 @@
     line-height: 15px
     &::placeholder
       color: #BDBDBD
+  &__button
+    margin-left: -140px
   &__info
     font-style: normal
     font-weight: bold
@@ -76,3 +80,4 @@
     display: flex
     justify-content: space-between
     align-items: center
+    margin-top: 15px

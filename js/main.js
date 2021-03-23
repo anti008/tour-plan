@@ -48,4 +48,27 @@ $(document).ready(function () {
     modalOverlay.removeClass("modal__overlay--visible");
     modalDialog.removeClass("modal__dialog--visible");
   }
+  // Обработка форм
+  $(".form__validate").each(function () {
+    $(this).validate({
+      errorClass: "invalid",
+      messages: {
+        name: {
+          required: "We need your name to contact you",
+          minlength: "Имя должно быть не короче 2 букв",
+        },
+        email: {
+          required: "We need your email address to contact you",
+          email: "Your email address must be in the format of name@domain.com",
+        },
+        phone: {
+          required: "We need your phone nomber to contact you",
+        },
+      },
+    });
+  });
+});
+
+$(document).ready(function () {
+  $(".phone").mask("+7 (000) 000-00-00");
 });
