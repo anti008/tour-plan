@@ -49,7 +49,7 @@ $(document).ready(function () {
     modalDialog.removeClass("modal__dialog--visible");
   }
   // Обработка форм
-  $(".form__validate").each(function () {
+  $(".form-validate").each(function () {
     $(this).validate({
       errorClass: "invalid",
       messages: {
